@@ -1,0 +1,29 @@
+.migas-de-pan{
+    padding: 0;
+    margin-left: 15px;
+}
+
+.migas-de-pan-item{
+    display: inline-block;
+}
+
+/* Esto selecciona todos los "migas-de-pan-item" menos el último */
+/* El ::after inserta lo que esté en el content antes de cada ".migas-de-pan-item:not(:last-of-type)", es decir, en todos los elementos menos el último */
+.migas-de-pan-item:not(:last-of-type)::after{
+    content: '\203a'; /* Representación en Unicode de > */
+    margin: 0 5px;
+    color: #000000;
+}
+
+.migas-de-pan-link{
+    text-decoration: none;
+    color: #000000;
+}
+
+.migas-de-pan-link:hover{
+    text-decoration: underline;
+}
+
+.miga-de-bread{
+    display: inline-block;
+}
